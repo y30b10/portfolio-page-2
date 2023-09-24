@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link href="./css/main.css" type="text/css" rel="stylesheet">
+    <script src="./js/head.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  
+    <title>Brian Yang</title>
+    <link rel="icon" href="./img/svg/favicon-logo-32.svg?v=6" sizes="16x16">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <menu class="nav__layout">
+          <li class="nav__li">
+            <a class="nav__btn nav__btn--logo" id="nav__btn--logo" href="#nav__btn--logo">
+              <svg class="nav__logo" width="32" height="100%" viewBox="0 0 328 328" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+                <g id="LOGO - border 20, inside 20, gaps 24">
+                <g id="Group 19">
+                <g id="Group 18">
+                <g id="Group 11">
+                <path class="svg-fill" id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M164 284H164.778C164.519 284.002 164.26 284.003 164 284.003L164 284ZM284 164.003C284 226.227 236.64 277.39 176 283.41V283.41V264.332L176 231.459V176H196L196 231.459V259.815C235.535 246.47 264 209.082 264 165.044C264 160.623 263.713 156.269 263.157 152H231.459H176V132H231.459H258.411C246.035 96.6371 214.352 70.3436 176 65.7569V44.5952C225.839 49.5436 266.708 84.9855 279.685 132H279.685C280.031 133.25 280.356 134.509 280.661 135.775C281.934 141.056 282.858 146.473 283.407 152C283.799 155.948 284 159.952 284 164.003Z" fill="#aaa"/>
+                </g>
+                <g id="Group 12">
+                <path class="svg-fill" id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M152 44.5947C91.3601 50.6154 44 101.778 44 164.002C44 226.226 91.3601 277.389 152 283.41V264.287C102.429 258.359 64 216.167 64 165C64 113.832 102.429 71.6406 152 65.7124V44.5947ZM164 284H163.284C163.523 284.002 163.761 284.002 164 284.002V284Z" fill="#aaa"/>
+                <path class="svg-fill" id="Intersect" fill-rule="evenodd" clip-rule="evenodd" d="M152 44.5952V132V152H132H96.5405H44.5928C45.2733 145.147 46.5303 138.464 48.3146 132H132V48.3166C138.464 46.5324 145.147 45.2756 152 44.5952ZM152 283.41V196V176H132H44.5922C45.2724 182.853 46.5291 189.536 48.3131 196H95.1579H132V279.689C138.464 281.473 145.147 282.73 152 283.41Z" fill="#aaa"/>
+                </g>
+                </g>
+                <circle class="svg-stroke" id="Ellipse 23" cx="164" cy="164" r="154" stroke="#aaa" stroke-width="20"/>
+                </g>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__li--btn-to-top">
+            <a class="nav__btn nav__btn--to-top" id="" href="#">
+              <div class="nav__btn--border-inside">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="icon/24/top-bar-triangle">
+                  <g id="triangle">
+                  <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M3.8016 17H20.1988L12.0002 10.2921L3.8016 17ZM21.5995 18H2.4009C1.931 18 1.7206 17.4106 2.08428 17.113L12.0002 9L21.9161 17.113C22.2798 17.4106 22.0694 18 21.5995 18Z" fill="#FEFEFE"/>
+                  </g>
+                  <rect id="top-bar" x="1" y="6" width="22" height="1" rx="0.5" fill="#FEFEFE"/>
+                  </g>
+                </svg>
+                <!--<span>To top</span>-->                
+              </div>              
+            </a>
+          </li>
+          <li class="nav__li ">
+            <ul class="nav__ul-nested">
+              <li class="nav__li-nested nav__li-nested--envelope">
+                <a class="nav__btn" id="nav__btn--envelope" href="#nav__btn--envelope">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="icon/24/envelope">
+                    <g id="Group 15">
+                    <g id="Rectangle 85">
+                    <mask id="path-1-inside-1_607_174" fill="white">
+                    <rect x="1" y="4" width="22" height="16" rx="0.5"/>
+                    </mask>
+                    <rect x="1" y="4" width="22" height="16" rx="0.5" stroke="#FEFEFE" stroke-width="2" mask="url(#path-1-inside-1_607_174)"/>
+                    </g>
+                    <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M8.57024 14.1626L7.74977 13.4839L1.24772 17.2838C1.0943 17.3734 1 17.5378 1 17.7155V19.5C1 19.7761 1.22386 20 1.5 20H22.5C22.7761 20 23 19.7761 23 19.5V17.7155C23 17.5378 22.9057 17.3734 22.7523 17.2838L16.2502 13.4839L15.4298 14.1626L22 18.0024V19H2V18.0024L8.57024 14.1626Z" fill="#FEFEFE"/>
+                    <path id="Vector 84" d="M11.6813 16.0874L1.5 7.66472V4.5H22.5L22.5 7.66472L12.3187 16.0874C12.1338 16.2404 11.8662 16.2404 11.6813 16.0874Z" stroke="#FEFEFE" stroke-linecap="round"/>
+                    </g>
+                    </g>
+                  </svg>              
+                </a>           
+              </li>
+              <li class="nav__li-nested">
+                <a class="nav__btn" id="" href="https://www.linkedin.com/in/brian-yang" target="_blank">
+                  <svg class="nav__linkedin" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="linkedin">
+                    <path class="svg-fill" id="Vector" d="M21 1.5H2.99531C2.17031 1.5 1.5 2.17969 1.5 3.01406V20.9859C1.5 21.8203 2.17031 22.5 2.99531 22.5H21C21.825 22.5 22.5 21.8203 22.5 20.9859V3.01406C22.5 2.17969 21.825 1.5 21 1.5ZM7.84687 19.5H4.73438V9.47812H7.85156V19.5H7.84687ZM6.29062 8.10938C5.29219 8.10938 4.48594 7.29844 4.48594 6.30469C4.48594 5.31094 5.29219 4.5 6.29062 4.5C7.28437 4.5 8.09531 5.31094 8.09531 6.30469C8.09531 7.30312 7.28906 8.10938 6.29062 8.10938ZM19.5141 19.5H16.4016V14.625C16.4016 13.4625 16.3781 11.9672 14.7844 11.9672C13.1625 11.9672 12.9141 13.2328 12.9141 14.5406V19.5H9.80156V9.47812H12.7875V10.8469H12.8297C13.2469 10.0594 14.2641 9.22969 15.7781 9.22969C18.9281 9.22969 19.5141 11.3062 19.5141 14.0062V19.5Z" fill="#aaa"/>
+                    </g>
+                  </svg>              
+                </a>
+              </li>
+            </ul>
+          </li>          
+        </menu>
+      </nav>
+      <aside class="nav-dropdown" id="nav-dropdown--logo">
+        <div class="nav-dropdown__container-2">
+          <div class="nav-dropdown__container">
+            <p class="nav-dropdown__blurb">
+              Designing in visuals, UX/UI, product, and a little code. </br> </br>
+              This is a small portfolio I coded with HTML, CSS (SCSS), and a bit of Javascript and Jquery.</br></br>
+              Please contact me for a more in-depth look at the work.
+            </p>
+            
+            <hr class="nav-dropdown__hr">
+            <form class="nav-dropdown__form--logo">
+              <label class="nav-dropdown__label">
+                Send a message
+              </label>
+              <textarea class="nav-dropdown__textarea" placeholder="Write a message">
+              </textarea>
+              <button class="nav-dropdown__btn">
+                Send
+              </button>
+            </form>
+            <button class="nav-dropdown__btn-close" id="nav-dropdown__btn-close--logo">
+              Close
+            </button>
+          </div>
+        </div>        
+      </aside>
+      <aside class="nav-dropdown nav" id="nav-dropdown--envelope">
+        <div class="nav-dropdown__container-2">
+          <div class="nav-dropdown__container">
+            <form class="nav-dropdown__form">
+              <label class="nav-dropdown__label">
+                Send a message
+              </label>
+              <textarea class="nav-dropdown__textarea" placeholder="Write a message">
+              </textarea>
+              <button class="nav-dropdown__btn">
+                Send
+              </button>
+            </form>
+            <button class="nav-dropdown__btn-close" id="nav-dropdown__btn-close--envelope">
+              Close
+            </button>
+          </div>
+        </div>
+      </aside>
+    </header>
+    <main class="">
+      <section class="intro">
+        <h1 class="intro__about">
+          Hello, </br></br> I'm a visual + product designer
+        </h1>
+      </section>
+      <section class="work" id="work">
+        <menu class="work__layout" id="work__layout">
+          <li class="card active-card" id="card--cfp">
+            <a class="card__btn card__btn--cfp" id="card__btn--cfp" href="#card--cfp">
+              <img class="card__btn-img" src="./img/cfp/food-container.jpg" alt=""> 
+              <div class="card__btn-container">
+                <div class="card__placeholder-container" id="card__placeholder-container--cfp">
+  
+                </div>
+                <div class="card__header-container">
+                  <h2 class="card__header" id="card__header--cfp">
+                    Cortland Food Project
+                  </h2>
+                  <div class="card__subheader" id="card__subheader--cfp">
+                    Visual design
+                  </div>
+                </div>
+                <div class="card__arrow-container" id="card__arrow-container--cfp">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="icon/24/arrow-right">
+                    <path id="Vector 148" d="M22 12L12 22V16H1V8H12V2L22 12Z" stroke="#fff"/>
+                    </g>
+                  </svg>                
+                </div>
+              </div>
+            </a>
+            <article class="article" id="article--cfp">
+              <div class="article__container">
+                <h3 class="article__header">
+                  Summary
+                </h3>
+                <p class="article__p">
+                  The work here's a visual identity for a multi-disciplinary food projects group that's both community-facing and supplier/industry-facing. The group promotes agricultural economic opportunities, sustainability, and nutrition for all.
+                </p>
+                <img class="article__img--full-column" src="./img/cfp/food-container.jpg" alt="Food container with Cortland Food Project's logo">
+                              
+                
+              </div>
+      
+            </article>
+          </li>
+          <li class="card active-card" id="card--finvo">
+            <a class="card__btn" id="card__btn--finvo" href="#card--finvo">
+              <img class="card__btn-img" src="./img/finvo/woman_holding_iphone_14.jpg" alt="">
+              <div class="card__btn-container">
+                <div class="card__placeholder-container" id="card__placeholder-container--finvo">
+  
+                </div>
+                <div class="card__header-container">
+                  <h2 class="card__header" id="card__header--finvo">
+                    Finvo
+                  </h2>
+                  <div class="card__subheader" id="card__subheader--finvo">
+                    UX/UI & Visual design
+                  </div>
+                </div>
+                <div class="card__arrow-container" id="card__arrow-container--finvo">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="icon/24/arrow-right">
+                    <path id="Vector 148" d="M22 12L12 22V16H1V8H12V2L22 12Z" stroke="#fff"/>
+                    </g>
+                  </svg>                
+                </div>
+              </div>
+            </a>
+            <article class="article" id="article--finvo">
+              <div class="article__container">
+                <h3 class="article__header">
+                  Summary
+                </h3>
+                <p class="article__p">
+                  This project involves building a website using end to end UX/UI work, from research to usability testing, for an online and in-person group promoting financial education for women.
+                </p>
+                <img class="article__img--full-column" src="./img/finvo/woman_holding_iphone_14.jpg" alt="">
+                           
+                
+              </div>
+      
+            </article>
+          </li>
+          <li class="card active-card" id="card--cortland">
+            <a class="card__btn" id="card__btn--cortland" href="#card--cortland">
+              <img class="card__btn-img" src="./img/cortland/ribeye-5.jpg" alt="">
+              <div class="card__btn-container">
+                <div class="card__placeholder-container" id="card__placeholder-container--cortland">
+                  
+                </div>
+                <div class="card__header-container">
+                  <h2 class="card__header" id="card__header--cortland">
+                    Cortland Harvest
+                  </h2>
+                  <div class="card__subheader" id="card__subheader--cortland">
+                    Visual design
+                  </div>
+                </div>
+                <div class="card__arrow-container" id="card__arrow-container--cortland">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="icon/24/arrow-right">
+                    <path id="Vector 148" d="M22 12L12 22V16H1V8H12V2L22 12Z" stroke="#fff"/>
+                    </g>
+                  </svg>                
+                </div>
+              </div>
+            </a>
+            <article class="article" id="article--cortland">
+              <div class="article__container">
+                <h3 class="article__header">
+                  Summary
+                </h3>
+                <p class="article__p">
+                  This project consists of creating a visual identity for a local produce and agriculture initiative aimed towards millennials that promotes buying local foods as well as supporting agritourism.
+                </p>
+                <img class="article__img--full-column" src="./img/cortland/ribeye-5.jpg" alt="">
+                              
+                
+              </div>
+      
+            </article>
+          </li>
+        </menu>
+        <!--<article class="article" id="article--cortland">
+          <div class="article__container">
+            <p class="article__p">
+
+            </p>
+            <img class="article__img--full-column" src="" alt="">
+            <img class="article__img--full-bleed" src="" alt="">
+            <img class="article__img--half-column-start" src="" alt="">
+            <img class="article__img--half-page-start" src="" alt="">
+            
+          </div>
+  
+        </article>-->
+      </section>
+    </main>
+    <footer class="">
+      <div class="footer__container">
+        <a class="footer__link" href="https://brianyang.org">brianyang.org</a>
+        <span>&copy; <time datetime="2023">2023</time></span>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

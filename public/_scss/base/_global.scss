@@ -1,0 +1,69 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: -webkit-fill-available;
+  //scroll-snap-type: y mandatory;
+}
+
+html,
+body {
+  margin          : 0;
+  padding         : 0;
+  box-sizing      : border-box;
+}
+
+body {
+  min-height: vh(100);
+  min-height: 100svh;
+  min-height: -webkit-fill-available;
+  background-color: $color-bg;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+menu,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+
+@media only screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

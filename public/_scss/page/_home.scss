@@ -1,0 +1,42 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+body {
+  padding: calc(6svh + 60px) 20px 0;//48px 20px;
+}
+
+
+/// Intro section
+/// 
+.intro {
+  height: vh(74);
+  height: 74svh;
+  @include flex($jc: center, $ai: center);
+}
+
+.work {
+  height: min-content;
+  @include flex;
+}
+
+.work--open {
+  //height: min-content;
+}
+
+
+
+.work__layout {
+  width: 1200px;
+  height: 100%;
+  @include flex($fd: column);
+  gap: 0;
+  //gap: 40px;
+}
+
+.work__layout--open {
+  //gap: 20px;
+}

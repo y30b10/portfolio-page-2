@@ -1,0 +1,249 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+header {
+  position: fixed;
+  top: 6svh; //48px;
+  left: 0;
+  width: 100%;
+  //@include flex($fd: column);
+  z-index: 9;
+  text-align: center;
+}
+
+
+/// Nav bar
+/// 
+.nav {
+  border-top: 1px solid $color-border-glass;
+  border-radius: $radius-nav;
+  background-color: $color-bg-nav;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 20px 20px 0px $color-shadow;
+  overflow: hidden;
+  width: 96%;
+  max-width: 1224px;
+  display: inline-block;
+
+  @media only screen and (min-width: 601px) {
+    width: 98%;
+  }
+  
+  a:active {
+    transform: translate(0, 2px);
+    filter: brightness(0.6);
+  }
+}
+
+.nav__layout {
+  height: 60px;
+  padding: 0 20px;
+  @include flex($jc: space-between);
+  gap: 8px;
+  //position: relative;
+}
+
+.nav__li {
+  min-width: 48px;
+
+  @media only screen and (min-width: $nano) {
+    min-width: 48px;//104px;
+  }
+}
+
+.nav__li--btn-to-top {
+  width: clamp(80px, 20%, 240px);
+  //display: none;
+}
+
+.nav__btn {
+  min-width: 48px;
+  height: $height-btn;
+  //padding: 8px;
+  cursor: pointer;
+  @include flex();
+}
+
+.nav__btn--logo {
+  justify-content: flex-start;
+  padding-left: 8px;
+}
+
+.svg-fill {
+  fill: #ccc;
+  transition: all $time-transition-all;
+}
+
+.svg-stroke {
+  stroke: #ccc;
+  transition: all $time-transition-all;
+}
+
+.nav__btn:hover .svg-fill {
+
+  @media (hover: hover) {
+    fill: #fff;
+    transition: all $time-transition-all;
+  }
+}
+
+.nav__btn:hover .svg-stroke {
+
+  @media (hover: hover) {
+    stroke: #fff;
+    transition: all $time-transition-all;
+  }
+}
+
+.nav__btn--to-top {
+  width: 100%;
+  background-color: $color-bg-btn-secondary;
+  border-radius: $radius-btn;
+  border: 1px solid $color-border-glass;
+  padding: 4px;
+  transition: all $time-transition-all;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+  
+  &:hover {  
+  
+    @media (hover: hover) {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+  }
+}
+
+
+.nav__btn--border-inside {
+  //border: 1px solid $color-border-glass;
+  width: 100%;
+  height: 100%;
+  border-radius: $radius-btn;
+  @include flex($fd: column);
+  gap: 2px;
+}
+
+.nav__ul-nested {
+  @include flex;
+  gap: 6px;
+  justify-content: flex-end;
+
+  @media only screen and (min-width: $nano) {
+    gap: 8px;
+  }
+}
+
+.nav__li-nested--envelope {
+  display: none;
+
+  //@media only screen and (min-width: $nano) {
+    //display: flex;
+  //}
+}
+
+/// Dropdown from logo
+/// 
+.nav-dropdown {
+  @extend .nav;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  //margin-top: 4px;
+  //max-height: 0;
+  display: none;
+  opacity: 0;
+  transform: translate(0, -250);
+  transition: all $time-transition-all;
+}
+
+.nav-dropdown--show {
+  padding: 24px 20px;
+  //max-height: 999px;
+  display: inline-block;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.nav-dropdown__container-2 {
+  @include flex;
+}
+
+.nav-dropdown__container {  
+  width: min(100%, 100ch);
+  @include flex($fd: column, $jc: flex-start, $ai: flex-start);
+  padding: 0 20px;
+}
+
+.nav-dropdown__blurb {  
+  margin: 1.5rem 0 2rem;
+}
+
+.nav-dropdown__italic {
+  align-self: center;
+  margin-bottom: 0.75rem;
+}
+
+.nav-dropdown__hr {
+  width: 100%;
+  opacity: 0.15;
+
+  //@media only screen and (min-width: $nano) {
+    display: none;
+  //}
+}
+
+.nav-dropdown__form {
+  margin-top: pxrem(8);
+  width: 100%;
+  @include flex($fd: column, $ai: stretch);
+}
+
+.nav-dropdown__form--logo {
+  @extend .nav-dropdown__form;
+  
+  //@media only screen and (min-width: $nano) {
+    display: none;
+  //}
+}
+
+.nav-dropdown__textarea {
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  height: pxrem(128);
+  padding: pxrem(8);
+}
+
+.nav-dropdown__btn {
+  @extend .nav__btn;
+  border-radius: $radius-btn;
+  background-color: $color-bg-btn-primary;
+  border: initial;
+}
+
+.nav-dropdown__btn-close {
+  @extend .nav__btn;
+  border-radius: $radius-btn;
+  background-color: $color-bg-btn-primary;
+  border: initial;// 1px solid $color-border-glass;
+  width: 100%;
+  transition: all $time-transition-all;
+  
+  &:hover {
+  
+    @media (hover: hover) {
+      background-color: $color-hover-btn-primary;
+    }
+  }
+  
+  &:active {
+    transform: translate(0, 2px);
+    filter: brightness(0.8);
+  }
+}
+

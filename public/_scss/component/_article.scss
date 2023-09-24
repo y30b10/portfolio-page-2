@@ -1,0 +1,100 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+/// Container for content
+///
+.article {
+  @include flex-article-center-col($r: pxrem(40));
+  display: none;
+}
+
+.article--open {
+  display: flex;
+}
+
+.article__container {
+  width: min(100%, 100ch);
+  @include flex($fd: column, $jc: flex-start, $ai: flex-start);//, $c: 40px, $r: 40px);
+  gap: 20px;
+  margin:pxrem(60) 0;
+  padding: 0 20px;
+
+  @media only screen and (min-width: $deca) {
+    //flex-direction: row;
+    //flex-wrap: wrap;
+  }
+}
+
+.article__container--open {
+}
+
+.article__p {
+  width: min(100%, 50ch);
+  //min-height: pxrem(120);
+  @include flex($fd: column, $jc: flex-start);
+}
+
+.article__img--full-column {
+  width: 100%;
+  background-color: #555;
+  @include flex($fd: column);//, $r: pxrem(20), $c: pxrem(20));
+  border-radius: $radius-nav;
+  margin-bottom: pxrem(40);
+}
+
+
+
+
+
+.article__img--full-bleed {
+  width: 100vw;
+  flex-wrap: wrap;
+  background-color: #555;
+  @include flex($fd: column);
+}
+
+.article__img--half-column-start {
+  width: 50%;
+  height: vh(80);
+  align-self: flex-start;
+  flex-wrap: wrap;
+  background-color: #555; 
+  @include flex($fd: column);
+}
+
+.article__img--half-column-end {
+  width: 50%;
+  height: vh(80);
+  align-self: flex-end;
+  flex-wrap: wrap;
+  background-color: #555; 
+  @include flex($fd: column);
+}
+
+.article__img--half-page-start {
+  width: 50vw;
+  height: vh(80);
+  align-self: flex-start;
+  background-color: #555;
+  @include flex($fd: column);
+}
+
+.article__img--half-page-end {
+  width: 50vw;
+  height: vh(80);
+  align-self: flex-end;
+  background-color: #555;
+  @include flex($fd: column);
+}
+
+.half-text {
+  background-color: initial;
+  align-self: flex-start;
+  justify-content: flex-start;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}

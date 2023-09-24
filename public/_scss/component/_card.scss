@@ -1,0 +1,211 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+/// Card work
+///
+.card {
+  //margin: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+  height: vh(66);
+  height: 66svh;
+  //flex: 1 1 100%;
+  border-top: 1px solid $color-border-glass;
+  border-radius: $radius-nav;
+  background-color: $color-bg-card;
+  box-shadow: 0px 20px 20px 0px $color-shadow;
+  margin-bottom: 48px;
+  overflow: hidden;
+  transition: all $time-transition-all;
+  //background-image: linear-gradient(rgba(#111, 0.65), rgba(#111, 0.65));
+  transition: all $time-transition-all;
+}
+
+.active-card:active {
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.card--open {
+  border-top: initial;
+  background-image: initial;
+  background-color: rgba(60, 60, 60, 0.3);
+  height: min-content;
+  //margin-bottom: 20px;
+}
+
+.card__btn {
+  height: 100%;
+  padding: 80px 20px;
+  @include flex($ai: center);//flex-start);
+  transition: all $time-transition-all;
+  overflow: hidden;
+  position: relative;
+
+  &:hover {  
+    @media (hover: hover) {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+  }
+  
+  &:active {
+    background-color: rgba(0, 0,0, 0.15);
+    //margin-top: 2px;
+    //margin-bottom: -2px;
+    //transform: translate(2px, 0);
+  }
+}
+
+
+.card__btn-img {
+  object-fit: cover;
+  //opacity: 0.5;
+  z-index: -1;
+  position: absolute;
+}
+
+.card__btn--open {
+  //border-bottom: 1px solid $color-border-glass;
+  height: 160px;
+  border-radius: $radius-nav $radius-nav 0 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0 99%, $color-border-glass 1% 100%),
+                    linear-gradient(-90deg, #222, rgba(0, 0, 0, 0.4));
+  box-shadow: initial;
+  transition: all $time-transition-all;
+  
+  &:hover {  
+  
+    @media (hover: hover) {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  }
+  
+  &:active {
+    margin-top: 4px;
+    margin-bottom: -4px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+
+.card__btn-container {  
+  width: min(100%, 100ch);
+  @include flex($jc: space-between, $ai: center);  
+  
+  @media only screen and (min-width: 1014px) {
+    padding: 0 1px;
+  }
+  @media only screen and (min-width: 1016px) {
+    padding: 0 2px;
+  }
+  @media only screen and (min-width: 1018px) {
+    padding: 0 3px;
+  }
+  @media only screen and (min-width: 1020px) {
+    padding: 0 4px;
+  }
+  @media only screen and (min-width: 1022px) {
+    padding: 0 5px;
+  }
+  @media only screen and (min-width: 1024px) {
+    padding: 0 6px;
+  }
+  @media only screen and (min-width: 1026px) {
+    padding: 0 7px;
+  }
+  @media only screen and (min-width: 1028px) {
+    padding: 0 8px;
+  }
+  @media only screen and (min-width: 1030px) {
+    padding: 0 9px;
+  }
+  @media only screen and (min-width: 1032px) {
+    padding: 0 10px;
+  }
+  @media only screen and (min-width: 1034px) {
+    padding: 0 11px;
+  }
+  @media only screen and (min-width: 1036px) {
+    padding: 0 12px;
+  }
+  @media only screen and (min-width: 1038px) {
+    padding: 0 13px;
+  }
+  @media only screen and (min-width: 1040px) {
+    padding: 0 14px;
+  }
+  @media only screen and (min-width: 1042px) {
+    padding: 0 15px;
+  }
+  @media only screen and (min-width: 1044px) {
+    padding: 0 16px;
+  }
+  @media only screen and (min-width: 1046px) {
+    padding: 0 17px;
+  }
+  @media only screen and (min-width: 1048px) {
+    padding: 0 18px;
+  }
+  @media only screen and (min-width: 1050px) {
+    padding: 0 19px;
+  }
+  @media only screen and (min-width: 1052px) {
+    padding: 0 20px;
+  }
+
+  //@include card-header-padding-fix($card-header-padding-fix);
+}
+
+.card__placeholder-container {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.card__placeholder-container--open {
+  //display: flex;
+}
+
+.card__arrow-container {
+  //transform: rotate(90deg);
+  transition: all $time-transition-all;
+}
+
+.card__arrow-container--open {
+    transform: rotate(-90deg);
+    align-self: center;  
+}
+
+.card__header {  
+  margin-bottom: pxrem(8);
+}
+
+/*
+#card--cortland {
+
+  @media only screen and (min-width: 1440px) {
+    //order: 3;
+    flex: 1 0 100%;
+  }
+}
+
+#card--finvo {
+
+  @media only screen and (min-width: 1440px) {
+    //order: 1;
+    flex: 1 1 50%;
+  }
+}
+
+#card--cfp {
+
+  @media only screen and (min-width: 1440px) {
+    //order: 2;
+    flex: 1 1 50%;
+  }
+}*/

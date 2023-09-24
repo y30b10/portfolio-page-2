@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon/24/envelope">
+<g id="Group 15">
+<g id="Rectangle 85">
+<mask id="path-1-inside-1_607_174" fill="white">
+<rect x="1" y="4" width="22" height="16" rx="0.5"/>
+</mask>
+<rect x="1" y="4" width="22" height="16" rx="0.5" stroke="#FEFEFE" stroke-width="2" mask="url(#path-1-inside-1_607_174)"/>
+</g>
+<path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M8.57024 14.1626L7.74977 13.4839L1.24772 17.2838C1.0943 17.3734 1 17.5378 1 17.7155V19.5C1 19.7761 1.22386 20 1.5 20H22.5C22.7761 20 23 19.7761 23 19.5V17.7155C23 17.5378 22.9057 17.3734 22.7523 17.2838L16.2502 13.4839L15.4298 14.1626L22 18.0024V19H2V18.0024L8.57024 14.1626Z" fill="#FEFEFE"/>
+<path id="Vector 84" d="M11.6813 16.0874L1.5 7.66472V4.5H22.5L22.5 7.66472L12.3187 16.0874C12.1338 16.2404 11.8662 16.2404 11.6813 16.0874Z" stroke="#FEFEFE" stroke-linecap="round"/>
+</g>
+</g>
+</svg>

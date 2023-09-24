@@ -1,0 +1,156 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+html {
+  color: $color-text;
+  font-family: $sans-serif;
+}
+
+a {
+  color: $color-link;
+  transition: all $time-transition-all;
+  
+  &:hover {
+  
+    @media (hover: hover) {
+      color: $color-link-hover;
+    }
+  }
+}
+
+p {
+  line-height: 1.6;
+}
+
+
+/// Nav section
+/// 
+// Nav btn
+.nav__btn--border-inside {
+  //font-size: pxrem(9);
+  font-family: $sans-serif-2;
+}
+
+//Dropdown from logo
+.nav-dropdown__blurb {
+  //font-style: italic;
+  font-weight: 300;
+  line-height: 2.1;
+  font-size: pxrem(14);
+  text-align: left;
+}
+
+.nav-dropdown__italic {
+  font-weight: 300;
+}
+
+.nav-dropdown__label {
+  font-weight: 600;
+  font-size: pxrem(17);
+  text-align: left;
+}
+
+.nav-dropdown__btn {
+  font-weight: 600;
+  font-size: pxrem(16);
+  font-family: $sans-serif;
+  color: $color-link;
+}
+
+.nav-dropdown__btn-close {
+  @extend .nav-dropdown__btn;
+}
+
+/// Intro section
+/// 
+.intro__about {
+  text-align: center;
+  font-weight: 600;
+
+  @media only screen and (min-width: $centi) {
+    font-size: pxrem(26);
+  }
+  
+  @media only screen and (min-width: $hecto) {
+    font-size: pxrem(30);
+  }
+
+  @media only screen and (min-width: $kilo) {
+    font-size: pxrem(36);
+  }
+
+  @media only screen and (min-width: $giga) {
+    font-size: pxrem(40);
+  }
+
+  @media only screen and (max-height: $hecto) {
+    font-size: pxrem(26);
+  }
+}
+
+/// Work section
+/// 
+.card__header {
+  font-size: pxrem(18);
+  font-weight: 600;
+}
+
+//.card__header--open {
+  //text-align: center;
+//}
+
+.card__header-container {
+  line-height: 1.4;
+}
+
+.card__subheader {
+  font-size: pxrem(13);
+  font-family: $sans-serif-2;
+}
+
+//.card__subheader--open {
+  //text-align: center;
+//}
+
+// Article
+.article__header {
+  font-weight: 600;
+  font-size: pxrem(16);
+}
+
+.article__p {
+  font-weight: 400;//300;
+  line-height: 1.9;
+  font-size: pxrem(15);
+}
+
+// Footer
+footer {
+  font-weight: 200;
+  font-size: pxrem(12);
+  font-family: $sans-serif-2;
+}
+
+
+
+/// 404 Page Not Found
+/// 
+///
+.h2-404 {
+  font-weight: 100;
+  font-size: pxrem(128);
+}
+
+.h1-404 {
+  font-weight: 600;
+  font-size: pxrem(26);
+  text-align: center;
+}
+
+.p-404 {
+  text-align: center;
+}

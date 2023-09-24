@@ -1,0 +1,14 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+.page-not-found-container {
+  height: vh(64);
+  height: 64svh;
+  padding: 0 20px;
+  @include flex($fd: column);
+  gap: 1.5rem;
+}

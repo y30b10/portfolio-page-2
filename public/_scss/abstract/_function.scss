@@ -1,0 +1,16 @@
+@use 'variable' as *;
+
+
+
+// Set height based on window.innerHeight
+@function vh($quantity) {
+@return calc(var(--vh, 1vh) * #{$quantity});
+}
+
+//example - .fullHeight { height: vh(100);}
+
+
+// Convert px to rem
+@function pxrem($px) {
+  @return calc($px/16) + rem;
+}

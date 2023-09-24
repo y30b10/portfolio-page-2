@@ -1,0 +1,125 @@
+/// Typeface
+/// 
+$sans-serif: (
+  'Lexend Deca',
+  Tahoma,
+  Arial, 
+  sans-serif, 
+);
+
+$sans-serif-2: (
+  'Inter',
+  Tahoma,
+  Arial,
+  sans-serif,
+);
+
+$monospace: (
+  'Inconsolata',
+  monospace,
+);
+
+
+/// Inputs
+/// 
+$input-color-bg-nav: 24;
+$input-color-bg-card: 30; //60;
+
+/// Colors
+/// 
+// Backgrounds
+$color-bg     : #2e2e2e;
+$color-bg-nav : rgba($input-color-bg-nav, $input-color-bg-nav, $input-color-bg-nav, 0.4);
+$color-bg-btn-primary : #444;
+$color-bg-btn-secondary: rgba(0, 0, 0, 0);
+$color-bg-card: rgba($input-color-bg-card, $input-color-bg-card, $input-color-bg-card, 0.78);
+
+// Hover bg
+$color-hover-btn-primary: #555;
+
+// Text
+$color-text: #fff;
+$color-link: #ddd;
+$color-link-hover: #fff;
+
+// Borders
+$color-border-glass: rgba(254, 254, 254, 0.15);
+
+// Shadows
+$color-shadow: rgba(0, 0, 0, 0.08);
+
+// Overlays
+$overlay-img-linear-gradient: linear-gradient(hsla(0, 0, 0, 0.65), hsla(0, 0, 0, 0.65));
+
+
+
+/// Height
+/// 
+// Btn
+$height-btn: 48px;
+
+
+/// Radius
+/// 
+// Nav
+$radius-nav: 16px;
+$radius-btn: $height-btn;
+
+
+/// Time
+/// 
+// Transition all
+$time-transition-all: 0.2s;
+
+
+/// Breakpoints
+/// 
+// Min-width
+$pico : 20rem;
+$nano : 22.5rem;
+$micro: 23.4375rem;
+$milli: 24.375rem;
+$centi: 25.75rem;
+$deci : 26.75rem;
+$deca : 30rem;
+$hecto: 37.5rem;
+$kilo : 48rem;
+$mega : 62rem;
+$giga : 75rem;
+$tera : 90rem;
+$peta : 120.0625rem;
+$exa  : 160.0625rem;
+
+$xxxs    : 20rem;
+$xxs     : 22.5rem;
+$xs      : 23.4375rem;
+$sm      : 24.375rem;
+$ms      : 25.75rem;
+$md      : 26.75rem;
+$ml      : 30rem;
+$lg      : 37.5rem;
+$xl      : 48rem;
+$xxl     : 62rem;
+$xxxl    : 75rem;
+$xxx-xl  : 90rem;
+$xxx-xxl : 120.0625rem;
+$xxx-xxxl: 160.0625rem;
+
+
+/*
+// Min-width in pixels
+$xxxs  : 320px; pico 16   5vw
+$xxs   : 360px; nano
+$xs    : 375px; micro 20
+$sm    : 390px; milli     6vw
+$ms    : 412px; centi 24
+$md    : 428px; deci
+$ml    : 480px; deca 32   7vw
+$lg    : 600px; hecto 40  8vw
+$xl    : 768px; kilo 60
+$xxl   : 992px; mega      10vw
+$xxxl  : 1200px; giga     12vw
+$xxx-xl: 1440px; tera     20vw
+$xxx-xxl: 1921px; peta
+$xxx-xxxl: 2561px; exa
+*/

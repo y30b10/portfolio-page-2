@@ -1,0 +1,30 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+footer {
+  margin-top: 2rem;
+  @include flex;
+}
+
+.footer__container {  
+  border-top: 1px solid $color-border-glass;  
+  width: 100%;
+  max-width: 1200px;
+  height: 4rem;
+  //transform: translate(0, -200);
+  @include flex($fd: row, $jc: space-between, $ai: center);
+  //padding: 0 20px;
+
+  a:active {
+    transform: translate(0, 2px);
+    filter: brightness(0.6);
+  }
+}
+
+.footer__link {
+  height: 48px;
+  @include flex;
+}

@@ -1,0 +1,10 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+.margin-left-auto {
+  margin-left: auto;
+}

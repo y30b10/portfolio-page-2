@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <link href="./css/main.css" type="text/css" rel="stylesheet">
+    <link href="./css/lightbox.css" rel="stylesheet" />
+
     <script src="./js/head.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   
     <title>Brian Yang</title>
     <link rel="icon" href="./img/svg/favicon-logo-32.svg?v=6" sizes="16x16">
@@ -93,8 +95,8 @@
         <div class="nav-dropdown__container-2">
           <div class="nav-dropdown__container">
             <p class="nav-dropdown__blurb">
-              Designing in visuals, UX/UI, product, and a little code. </br> </br>
-              This is a small portfolio I coded with HTML, CSS (SCSS), and a bit of Javascript and Jquery.</br></br>
+              Designing in visuals, UX/UI, product, and a little code. <br/> <br/>
+              This is a small portfolio coded with HTML, CSS (SCSS), and a bit of Javascript and Jquery.<br/><br/>
               Please contact me for a more in-depth look at the work.
             </p>
             
@@ -138,7 +140,7 @@
     <main class="">
       <section class="intro">
         <h1 class="intro__about">
-          Hello, </br></br> I'm a visual + product designer
+          Hello, <br/><br/> I'm a visual + product designer
         </h1>
       </section>
       <section class="work" id="work">
@@ -175,8 +177,9 @@
                 <p class="article__p">
                   The work here's a visual identity for a multi-disciplinary food projects group that's both community-facing and supplier/industry-facing. The group promotes agricultural economic opportunities, sustainability, and nutrition for all.
                 </p>
-                <img class="article__img--full-column" src="./img/cfp/food-container.jpg" alt="Food container with Cortland Food Project's logo">
-                              
+                <a class="article__img-btn" href="./img/cfp/food-container.jpg" data-lightbox="img-cfp" data-title="Cortland Food Project's logo on a food container" data-alt="Cortland Food Project's logo on a food container">
+                  <img class="article__img--full-column" src="./img/cfp/food-container.jpg" alt="Cortland Food Project's logo on a food container" />
+                </a>
                 
               </div>
       
@@ -214,7 +217,9 @@
                 <p class="article__p">
                   This project involves building a website using end to end UX/UI work, from research to usability testing, for an online and in-person group promoting financial education for women.
                 </p>
-                <img class="article__img--full-column" src="./img/finvo/woman_holding_iphone_14.jpg" alt="">
+                <a class="article__img-btn" href="./img/finvo/woman_holding_iphone_14.jpg" data-lightbox="img-finvo" data-title="Finvo website prototype on a mobile device" data-alt="Finvo website prototype on a mobile device">
+                  <img class="article__img--full-column" src="./img/finvo/woman_holding_iphone_14.jpg" alt="Finvo website prototype on a mobile device">
+                </a>
                            
                 
               </div>
@@ -253,7 +258,9 @@
                 <p class="article__p">
                   This project consists of creating a visual identity for a local produce and agriculture initiative aimed towards millennials that promotes buying local foods as well as supporting agritourism.
                 </p>
-                <img class="article__img--full-column" src="./img/cortland/ribeye-5.jpg" alt="">
+                <a class="article__img-btn" href="./img/cortland/ribeye-5.jpg" data-lightbox="img-cortland" data-title="Cortland Harvest logos throughout a dinner prep" data-alt="Cortland Harvest logos throughout a dinner prep">
+                  <img class="article__img--full-column" src="./img/cortland/ribeye-5.jpg" alt="Cortland Harvest logos throughout a dinner prep">
+                </a>
                               
                 
               </div>
@@ -283,5 +290,6 @@
       </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/lightbox.js"></script>
   </body>
 </html>

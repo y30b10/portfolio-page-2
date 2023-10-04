@@ -26,6 +26,7 @@ btnCloseEnvelope.addEventListener("click", () => {
 })
 
 
+
 let sectionWork = document.getElementById("work");
 let layoutWork = document.getElementById("work__layout");
 
@@ -297,3 +298,5 @@ function cfpToggle() {
     cardCfp.classList.add("active-card");
   }
 }
+
+

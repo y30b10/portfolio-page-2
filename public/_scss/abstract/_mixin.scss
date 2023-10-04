@@ -25,7 +25,12 @@
 }
 
 
-
+/// Grid
+/// 
+@mixin grid() {
+  display: grid;
+  
+}
 
 
 

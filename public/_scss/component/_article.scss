@@ -33,7 +33,7 @@
 }
 
 .article__p {
-  width: min(100%, 50ch);
+  width: min(100%, 75ch);
   //min-height: pxrem(120);
   @include flex($fd: column, $jc: flex-start);
 }

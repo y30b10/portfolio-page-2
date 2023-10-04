@@ -1,0 +1,333 @@
+@use '../abstract/variable' as *;
+@use '../abstract/map' as *;
+@use '../abstract/function' as *;
+@use '../abstract/mixin' as *;
+
+
+
+/// Typography
+/// 
+.body-resume {
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: pxrem(15);
+  letter-spacing: pxrem(0.5);
+}
+
+.header-resume {
+  line-height: 1.6;
+  font-size: pxrem(14);
+}
+
+a:hover {
+    
+  @media (hover: hover) {
+    color: #fff;
+  }
+}
+
+a:active {
+  color: #666;
+}
+
+.aside-resume__info {
+  line-height: 2;
+  font-weight: 400;
+  color: #999;
+  margin-top: calc(-72px + 80px + 2rem);
+  border-radius: $radius-nav;
+  width: min(100%, 1200px);
+  height: 100svh;
+  padding: 0 20px;
+  display: none;
+
+  @media only screen and (min-width: $kilo) {
+    display: inline-block;
+  }
+
+  a {
+    color: #999;
+  }
+
+  a:hover {
+    
+    @media (hover: hover) {
+      color: #fff;
+    }
+  }
+
+  a:active {
+    color: #666;
+  }
+}
+
+.aside-resume__h1 {
+  font-weight: 900;
+  font-size: pxrem(24);
+}
+
+.sidebar__h2 {
+  font-weight: 900;
+  margin: 2rem 0 0.5rem;
+}
+
+.sidebar__li {
+  font-weight: 300;
+  margin: 0 0 0.5rem;
+}
+
+.sidebar__span-dates {
+  font-weight: 100;
+}
+
+.intro-resume__name {
+  display: none;
+  cursor: pointer;
+  font-weight: 200;
+  font-size: pxrem(12);
+  text-transform: uppercase;
+  align-self: flex-end;
+  border-top: 1px solid $color-border-glass;
+  border-radius: $radius-btn;
+  padding: 8px 16px;
+  background-color: $color-bg-nav;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 20px 20px 0px $color-shadow;
+
+  @media only screen and (min-width: $kilo) {
+    display: none;
+
+  }
+}
+
+.intro-resume__h1 {
+  font-weight: 900;
+  font-size: pxrem(24);
+  margin: 1rem 0 0.25rem;
+
+  @media only screen and (min-width: $kilo) {
+    margin-top: 2rem;
+  }
+}
+
+.experience__h2 {
+  @extend .intro-resume__h1;
+  margin: 3rem 0 0;
+}
+
+.experience__h3 {
+  //border-top: 1px solid $color-border-glass;
+  font-weight: 400;
+  font-size: pxrem(20);
+  margin: 1.5rem 0 0.25rem;
+  //padding: 0.5rem 0;
+}
+
+.experience__p {
+  margin: 0 0 0.75rem;
+}
+
+.experience__li {
+  list-style: initial;
+  list-style-position: inside;
+  font-weight: 100;
+}
+
+
+/// Layout
+/// 
+// Nav
+.body-resume {
+  @include flex;
+}
+
+.header-resume {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-top {  
+  @include flex();
+  background-color: $color-bg;
+  padding: 0 20px;
+}
+
+.nav-top__menu {
+  width: min(100%, 70ch);
+  padding: 20px 0;
+  @include flex();
+  gap: 2rem;
+  
+  @media only screen and (min-width: $hecto) {
+    gap: 4rem;
+  }
+
+  @media only screen and (min-width: $kilo) {
+    width: min(100%, 1200px);
+    gap: 6rem;
+  }
+  
+  @media only screen and (min-width: $giga) {
+    gap: 8rem;
+    padding: 20px 0;
+  }
+
+  @media only screen and (min-width: 1202px) {
+    gap: 8rem;
+    padding: 20px 1px;
+  }
+
+  @media only screen and (min-width: 1204px) {
+    gap: 8rem;
+    padding: 20px 2px;
+  }
+
+  @media only screen and (min-width: 1206px) {
+    gap: 8rem;
+    padding: 20px 3px;
+  }
+
+  @media only screen and (min-width: 1208px) {
+    gap: 8rem;
+    padding: 20px 4px;
+  }
+
+  @media only screen and (min-width: 1210px) {
+    gap: 8rem;
+    padding: 20px 5px;
+  }
+
+  @media only screen and (min-width: 1212px) {
+    gap: 8rem;
+    padding: 20px 6px;
+  }
+
+  @media only screen and (min-width: 1214px) {
+    gap: 8rem;
+    padding: 20px 7px;
+  }
+
+  @media only screen and (min-width: 1216px) {
+    gap: 8rem;
+    padding: 20px 8px;
+  }
+
+  @media only screen and (min-width: 1218px) {
+    gap: 8rem;
+    padding: 20px 9px;
+  }
+
+  @media only screen and (min-width: 1220px) {
+    gap: 8rem;
+    padding: 20px 10px;
+  }
+
+  @media only screen and (min-width: 1222px) {
+    gap: 8rem;
+    padding: 20px 11px;
+  }
+
+  @media only screen and (min-width: 1224px) {
+    gap: 8rem;
+    padding: 20px 12px;
+  }
+
+  @media only screen and (min-width: 1226px) {
+    gap: 8rem;
+    padding: 20px 13px;
+  }
+
+  @media only screen and (min-width: 1228px) {
+    gap: 8rem;
+    padding: 20px 14px;
+  }
+
+  @media only screen and (min-width: 1230px) {
+    gap: 8rem;
+    padding: 20px 15px;
+  }
+
+  @media only screen and (min-width: 1232px) {
+    gap: 8rem;
+    padding: 20px 16px;
+  }
+
+  @media only screen and (min-width: 1234px) {
+    gap: 8rem;
+    padding: 20px 17px;
+  }
+
+  @media only screen and (min-width: 1236px) {
+    gap: 8rem;
+    padding: 20px 18px;
+  }
+
+  @media only screen and (min-width: 1238px) {
+    gap: 8rem;
+    padding: 20px 19px;
+  }
+
+  @media only screen and (min-width: 1240px) {
+    gap: 8rem;
+    padding: 20px 20px;
+  }
+}
+
+.nav-top__li {
+  height: 32px;
+}
+
+#nav-top__portfolio {
+  margin-left: auto;
+}
+
+.container-info {
+  @include flex();
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+// Resume
+.container-resume {
+  margin: 80px 0 96px;
+  width: min(100%, 70ch);
+  @include grid();
+
+  @media only screen and (min-width: $kilo) {
+    margin-left: 240px;
+  }
+}
+
+.main-resume {
+  padding: 0 20px;
+}
+
+.intro-resume {
+  margin: 0 0 2rem;
+  @include flex($fd: column, $ai: flex-start);
+}
+
+.intro-resume__name--info {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid $color-border-glass;
+  border-radius: $radius-nav;
+  background-color: $color-bg-nav;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 20px 20px 0px $color-shadow;
+}
+
+.intro-resume__name--open {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+}
+
+.intro-resume__name--info--open {
+  @extend .intro-resume__name--open;
+  top: calc(80px + 44px);
+  display: inline-block;
+}
